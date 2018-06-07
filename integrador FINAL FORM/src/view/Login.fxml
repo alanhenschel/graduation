@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <VBox prefHeight="150.0" prefWidth="433.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Nome de Usuário">
+               <VBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLogin" prefHeight="25.0" prefWidth="287.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="100.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Senha">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtSenha" prefHeight="25.0" prefWidth="344.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="100.0" />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+         <BorderPane.margin>
+            <Insets right="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <ImageView fitHeight="192.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Projeto%20Integrador%20II/New%20folder/Za%20Warudo%20Logo.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </right>
+   <bottom>
+      <HBox prefHeight="69.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#btnEntrarOnAction" prefHeight="32.0" prefWidth="80.0" text="Entrar">
+               <HBox.margin>
+                  <Insets left="50.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSair" mnemonicParsing="false" onAction="#btnSairOnAction" prefHeight="33.0" prefWidth="80.0" text="Sair">
+               <HBox.margin>
+                  <Insets left="45.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

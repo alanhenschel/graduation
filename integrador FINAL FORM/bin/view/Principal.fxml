@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+   <center>
+      <ImageView fitHeight="501.0" fitWidth="759.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Projeto%20Integrador%20II/New%20folder/Za%20Warudo%20Logo.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ImageView>
+   </center>
+   <top>
+      <MenuBar fx:id="mbMenu" BorderPane.alignment="TOP_CENTER">
+        <menus>
+          <Menu fx:id="menuVenda" mnemonicParsing="false" text="Venda">
+               <items>
+                  <MenuItem fx:id="menuRealizarVenda" mnemonicParsing="false" onAction="#menuRealizarVendaOnAction" text="Realizar" />
+               </items></Menu>
+          <Menu fx:id="menuClientes" mnemonicParsing="false" text="Clientes">
+            <items>
+              <MenuItem fx:id="menuClientesCadastrar" mnemonicParsing="false" onAction="#menuClientesCadastrarOnAction" text="Cadastrar" />
+                  <MenuItem fx:id="menuClientesEditar" mnemonicParsing="false" onAction="#menuClientesEditarOnAction" text="Visualizar e Excluir" />
+                  <MenuItem fx:id="menuClientesAlterar" mnemonicParsing="false" onAction="#menuClientesAlterarOnAction" text="Alterar" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuProdutos" mnemonicParsing="false" text="Produtos">
+            <items>
+                  <MenuItem fx:id="menuProdutosCadastrar" mnemonicParsing="false" onAction="#menuProdutosCadastrarOnAction" text="Cadastrar" />
+                  <MenuItem fx:id="menuProdutosEditar" mnemonicParsing="false" onAction="#menuProdutosEditarOnAction" text="Visualizar e Excluir" />
+                  <MenuItem fx:id="menuProdutosAlterar" mnemonicParsing="false" onAction="#menuProdutosAlterarOnAction" text="Alterar" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuFornecedores" mnemonicParsing="false" text="Fornecedores">
+               <items>
+                  <MenuItem fx:id="menuFornecedoresCadastrar" mnemonicParsing="false" onAction="#menuFornecedoresCadastrarOnAction" text="Cadastrar" />
+                  <MenuItem fx:id="menuFornecedoresEditar" mnemonicParsing="false" onAction="#menuFornecedoresEditarOnAction" text="Visualizar e Excluir" />
+                  <MenuItem fx:id="menuFornecedoresAlterar" mnemonicParsing="false" onAction="#menuFornecedoresAlterarOnAction" text="Alterar" />
+               </items>
+            </Menu>
+            <Menu fx:id="menuVendedores" mnemonicParsing="false" text="Vendedores">
+               <items>
+                  <MenuItem fx:id="menuVendedoresCadastrar" mnemonicParsing="false" onAction="#menuVendedoresCadastrarOnAction" text="Cadastrar" />
+                  <MenuItem fx:id="menuVendedoresEditar" mnemonicParsing="false" onAction="#menuVendedoresEditarOnAction" text="Visualizar e Excluir" />
+                  <MenuItem fx:id="menuVendedoresAlterar" mnemonicParsing="false" onAction="#menuVendedoresAlterarOnAction" text="Alterar" />
+               </items></Menu>
+            <Menu fx:id="menuSair" mnemonicParsing="false" text="Sair">
+               <items>
+                  <MenuItem fx:id="menuSairS" mnemonicParsing="false" onAction="#menuSairSOnAction" text="Sair" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

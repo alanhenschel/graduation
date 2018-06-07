@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlterarFornecedorController">
+   <center>
+      <VBox prefHeight="400.0" prefWidth="365.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Código do Fornecedor">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtCodigo">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Novo Bairro">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtBairro">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="17.0" prefWidth="200.0">
+               <children>
+                  <Label text="Novo País">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Novo Estado">
+                     <HBox.margin>
+                        <Insets left="65.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="243.0" spacing="20.0">
+               <children>
+                  <ComboBox fx:id="cbPais" prefWidth="150.0" />
+                  <TextField fx:id="txtEstado" />
+               </children>
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="300.0" prefWidth="269.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Novo Nome">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNome" prefHeight="25.0" prefWidth="402.0">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="17.0" prefWidth="267.0">
+               <children>
+                  <Label text="Novo Rua">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Novo Número">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="19.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="243.0">
+               <children>
+                  <TextField fx:id="txtRua" prefHeight="25.0" prefWidth="162.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtNumero" prefHeight="25.0" prefWidth="55.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label text="Novo CEP">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtCEP">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Novo Cidade">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtCidade">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets right="40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterarOnAction" prefHeight="41.0" prefWidth="114.0" text="Alterar">
+               <HBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#btnLimparOnAction" prefHeight="41.0" prefWidth="114.0" text="Limpar">
+               <HBox.margin>
+                  <Insets left="80.0" right="80.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSair" mnemonicParsing="false" onAction="#btnSairOnAction" prefHeight="41.0" prefWidth="114.0" text="Sair">
+               <HBox.margin>
+                  <Insets right="40.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

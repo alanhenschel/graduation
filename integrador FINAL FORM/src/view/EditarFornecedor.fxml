@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="501.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TabelaFornecedorController">
+   <center>
+      <BorderPane prefHeight="398.0" prefWidth="506.0" BorderPane.alignment="CENTER">
+         <center>
+            <TableView fx:id="tableFornecedor" prefHeight="224.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Código" />
+                <TableColumn fx:id="nome" prefWidth="75.0" text="Nome" />
+                  <TableColumn fx:id="cnpj" prefWidth="75.0" text="CNPJ" />
+                  <TableColumn fx:id="rua" prefWidth="75.0" text="Rua" />
+                  <TableColumn fx:id="bairro" prefWidth="75.0" text="Bairro" />
+                  <TableColumn fx:id="numero" prefWidth="75.0" text="Número" />
+                  <TableColumn fx:id="cep" prefWidth="75.0" text="CEP" />
+                  <TableColumn fx:id="pais" prefWidth="50.0" text="País" />
+                  <TableColumn fx:id="cidade" prefWidth="75.0" text="Cidade" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <VBox prefHeight="195.0" prefWidth="643.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="609.0" />
+                  <HBox alignment="TOP_CENTER" prefHeight="82.0" prefWidth="549.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="92.0" prefWidth="140.0">
+                           <children>
+                              <Label text="Nome" />
+                              <TextField fx:id="txtPesquisarFornecedorNome" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="92.0" prefWidth="120.0">
+                           <children>
+                              <Label text="CNPJ" />
+                              <TextField fx:id="txtPesquisarFornecedorCNPJ" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Button fx:id="btnPesquisar" mnemonicParsing="false" onAction="#btnPesquisarOnAction" text="Pesquisar nome" />
+                              <Button fx:id="btnPesquisar1" mnemonicParsing="false" onAction="#btnPesquisar1OnAction" text="Pesquisar CNPJ" />
+                              <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluirOnAction" text="Excluir" />
+                              <Button fx:id="btnExibir" mnemonicParsing="false" onAction="#btnExibir" text="Exibir" />
+                              <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#btnLimparOnAction" text="Limpar" />
+                              <Button fx:id="btnSair" mnemonicParsing="false" onAction="#btnSairOnAction" text="Sair" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
